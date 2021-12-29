@@ -7,7 +7,7 @@ import "./token/ERC20/ERC20.sol";
 
 contract ZSTToken is Ownable, ERC20{
 
-    uint256 private _maxtotalSupply = 1000000000 * 10 ** decimals();
+    uint256 private _maxtotalSupply = 5000000000 * 10 ** decimals();
 
     constructor () Ownable() ERC20("ZENSTY Token", "ZST"){
         _mint(msg.sender,  _maxtotalSupply);
